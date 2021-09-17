@@ -53,6 +53,22 @@ class BoardSpec: QuickSpec {
                     expect(board.state) == .playing(.cross)
                 }
             }
+            
+            context("a winning move") {
+                it("should switch to won state") {
+                    // arrange
+                    try! board.play(at: 0) // x
+                    try! board.play(at: 1) // o
+                    try! board.play(at: 3) // x
+                    try! board.play(at: 2) // o
+                    
+                    // act
+                    try! board.play(at: 6)
+
+                    // assert
+                    expect(board.state).to(equal(.won(.cross)))
+                }
+            }
         }
     }
 }
