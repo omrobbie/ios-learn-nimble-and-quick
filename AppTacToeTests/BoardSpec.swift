@@ -31,7 +31,11 @@ import Nimble
 @testable import AppTacToe
 
 class BoardSpec: QuickSpec {
-  override func spec() {
-
-  }
+    override func spec() {
+        var board: Board!
+        
+        beforeEach {
+            board = Board()
+        }
+    }
 }
