@@ -66,7 +66,8 @@ class BoardSpec: QuickSpec {
                     try! board.play(at: 6)
 
                     // assert
-                    expect(board.state).to(equal(.won(.cross)))
+                    // expect(board.state).to(equal(.won(.cross)))
+                    expect(board).to(beWon(by: .cross))
                 }
             }
             

@@ -23,6 +23,7 @@
 		78EE4CA61FF2BA4A0028142D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4CA51FF2BA4A0028142D /* Board.swift */; };
 		78EE4CAA1FF2BA8B0028142D /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4CA91FF2BA8B0028142D /* Mark.swift */; };
 		78EE4CAC1FF2E4540028142D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE4CAB1FF2E4540028142D /* Errors.swift */; };
+		FC63C36D26F4E346002ACF9C /* Board+Nimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63C36C26F4E346002ACF9C /* Board+Nimble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D83F222D2AE92D1DFA30202B /* Pods-AppTacToe-Tests-AppTacToeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTacToe-Tests-AppTacToeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTacToe-Tests-AppTacToeTests/Pods-AppTacToe-Tests-AppTacToeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB78FEED69D5D930ED5D873A /* Pods-AppTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTacToe.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppTacToe/Pods-AppTacToe.release.xcconfig"; sourceTree = "<group>"; };
 		FC28F142A3FA4E7876C412F0 /* Pods-AppTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTacToe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppTacToe/Pods-AppTacToe.debug.xcconfig"; sourceTree = "<group>"; };
+		FC63C36C26F4E346002ACF9C /* Board+Nimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Board+Nimble.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				78E528CC20011AC000CB8C9C /* BoardSpec.swift */,
+				FC63C36C26F4E346002ACF9C /* Board+Nimble.swift */,
 				78EE4C991FF2B9C20028142D /* Info.plist */,
 			);
 			path = AppTacToeTests;
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78E528CD20011AC000CB8C9C /* BoardSpec.swift in Sources */,
+				FC63C36D26F4E346002ACF9C /* Board+Nimble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
