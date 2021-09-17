@@ -37,5 +37,14 @@ class BoardSpec: QuickSpec {
         beforeEach {
             board = Board()
         }
+        
+        describe("playing") {
+            context("a single move") {
+                it("should switch to nought") {
+                    try! board.playRandom()
+                    expect(board.state).to(equal(.playing(.nought)))
+                }
+            }
+        }
     }
 }
