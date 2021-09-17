@@ -5,3 +5,7 @@ Learn BDT (Behavior Driven Testing) using Nimble and Quick. The full tutorial co
 <img src="screenshot/preview1.png" width=256 />&nbsp;
 <img src="screenshot/preview2.png" width=256 />&nbsp;
 <img src="screenshot/preview3.png" width=256 />&nbsp;
+
+
+### Testing Result
+<img src="screenshot/preview4.png" />
