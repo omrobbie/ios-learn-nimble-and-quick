@@ -69,6 +69,26 @@ class BoardSpec: QuickSpec {
                     expect(board.state).to(equal(.won(.cross)))
                 }
             }
+            
+            context("a move leaving no remaining moves") {
+                it("should switch to draw state") {
+                    // arrange
+                    try! board.play(at: 0)
+                    try! board.play(at: 2)
+                    try! board.play(at: 1)
+                    try! board.play(at: 3)
+                    try! board.play(at: 4)
+                    try! board.play(at: 8)
+                    try! board.play(at: 6)
+                    try! board.play(at: 7)
+                    
+                    // act
+                    try! board.play(at: 5)
+
+                    // assert
+                    expect(board.state) == .draw
+                }
+            }
         }
     }
 }
