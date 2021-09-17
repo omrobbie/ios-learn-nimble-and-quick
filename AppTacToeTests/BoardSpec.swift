@@ -45,6 +45,14 @@ class BoardSpec: QuickSpec {
                     expect(board.state).to(equal(.playing(.nought)))
                 }
             }
+            
+            context("two moves") {
+                it("should switch back to cross") {
+                    try! board.playRandom()
+                    try! board.playRandom()
+                    expect(board.state) == .playing(.cross)
+                }
+            }
         }
     }
 }
