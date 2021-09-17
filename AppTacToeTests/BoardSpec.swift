@@ -88,6 +88,17 @@ class BoardSpec: QuickSpec {
                     // assert
                     expect(board.state) == .draw
                 }
+                
+                context("a move that was already played") {
+                    it("should throw an error") {
+                        // arrange
+                        try! board.play(at: 0)
+                        
+                        // assert
+                        expect(expression: { try board.play(at: 0) })
+                            .to(throwError(Board.PlayError.alreadyPlayed))
+                    }
+                }
             }
         }
     }
